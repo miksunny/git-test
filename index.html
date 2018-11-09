@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index.html</title>
+	<style type="text/css">
+
+/*ul.arrange {display: inline-block;
+ 	list-style-type: none;}
+*//*
+.group> span {display: inline-block;}
+
+div.nav {background-color: #ff0000;
+	display: inline-block;
+width: 500px;
+border-radius: 5px}
+*/
+body {background-color: tomato;}
+div ul li {list-style-type: none;
+display: inline-block;}
+
+ li .nav {
+ display: inline-block;
+  list-style-type: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  list-style-type: circle;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+margin right: 100px;
+}
+
+  .nav:hover {background-color: pink;
+color: green;}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+.tooltip span {display: none}
+
+
+
+.tooltip:hover {z-index: 2;}
+.tooltip:hover span {display: block;
+   
+    width: 150px;
+    background-color:#42f4df ;
+    color: #5041f4;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: -150%;
+    left: 25%;}
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: hidden;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 160px;
+    border: 0px solid #fff;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.8);
+    padding: 6px 6px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    background-color: pink;
+    border: 0px solid #fff;
+    margin: 1px solid green;
+        color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;}
+
+  ul li ul li {
+  clear: both;
+  width: 100%;}
+
+  ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ 
+	</style>
+</head>
+<body>
+	<div class="grouo">
+	<ul>
+ 	<li><a href="#" class=" nav tooltip ">Home<span>Return to the homepage</span></a></li>
+  	<li><a href="#" class="nav tooltip">Gallery<span>Open gallery</span></a></li>
+  	<li><a href="#" class="nav tooltip dropdown">Blog<span>Explore our journals</span></a>
+  		<ul class="dropdown-content">
+    	<li><a href="#">Link 1</a></li>
+   		<li><a href="#">Link 2</a></li>
+    	<li><a href="#">Link 3</a></li>
+    	</ul>
+  	</li>
+	 <li><a href="#" class="nav tooltip">About<span>learn more about BeVex</span></a></li>
+  	<li><a href="#" class="nav tooltip">contact<span>Contact Us</span></li>
+  
+  </div> !
+  dropdown-content li a {
+}
+
+
+
+</body>
+</html>
